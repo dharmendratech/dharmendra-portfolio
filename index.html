@@ -1,151 +1,528 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dharmendra - Frontend Developer specializing in HTML, CSS, JavaScript, React, Next.js, WordPress and Laravel.">
-    <meta name="author" content="Dharmendra">
-    <meta property="og:title" content="Dharmendra | Frontend Developer">
-    <meta property="og:description" content="Modern, responsive and performance-focused web development portfolio.">
-    <meta property="og:type" content="website">
-    <title>Dharmendra | Frontend Developer</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Developer Portfolio | Frontend Developer</title>
+
+  <meta name="description"
+        content="Frontend developer portfolio showcasing modern web development projects and skills.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="header">
-    <nav class="navbar container" aria-label="Main navigation">
-        <a href="#home" class="logo">D<span>.</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li><li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">D<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="navLinks">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-cta">Let's Talk ↗</a>
+      </div>
     </nav>
-</header>
+  </header>
 
-<main>
-<section class="hero" id="home">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <p class="eyebrow">HELLO, I'M</p>
-            <h1>Dharmendra <span>Frontend Developer</span></h1>
-            <p class="hero-description">I build fast, responsive and user-friendly web experiences using modern frontend technologies and WordPress.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="mailto:your@email.com">Email</a>
-            </div>
-        </div>
-        <div class="hero-card">
-            <div class="code-card">
-                <div class="code-header"><span></span><span></span><span></span></div>
-<pre><code>const developer = {
-    name: "Dharmendra",
-    role: "Frontend Developer",
-    focus: [
-        "Performance",
-        "UI/UX",
-        "Clean Code"
-    ],
-    available: true
-};</code></pre>
-            </div>
-        </div>
-    </div>
-</section>
+  <main>
 
-<section class="section" id="about">
-    <div class="container">
-        <div class="section-heading"><p class="eyebrow">ABOUT ME</p><h2>Building websites that work.</h2></div>
-        <div class="about-grid">
-            <div>
-                <p class="large-text">I'm a web developer focused on creating modern, responsive and performance-oriented websites.</p>
-                <p>I work with frontend technologies as well as WordPress, PHP and Laravel. I enjoy converting ideas and designs into clean, accessible and maintainable websites.</p>
-                <p>My focus is not only visual design but also performance, SEO, accessibility, responsive layouts and clean code.</p>
-            </div>
-            <div class="stats">
-                <div class="stat"><strong>3+</strong><span>Years Experience</span></div>
-                <div class="stat"><strong>20+</strong><span>Projects</span></div>
-                <div class="stat"><strong>10+</strong><span>Technologies</span></div>
-                <div class="stat"><strong>100%</strong><span>Commitment</span></div>
-            </div>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <div class="availability">
+          <span class="status-dot"></span>
+          Available for opportunities
         </div>
-    </div>
-</section>
 
-<section class="section section-dark" id="skills">
-    <div class="container">
-        <div class="section-heading"><p class="eyebrow">MY SKILLS</p><h2>Technologies I work with.</h2></div>
+        <p class="eyebrow">HELLO, I'M A DEVELOPER</p>
+
+        <h1>
+          Building digital<br>
+          experiences with<br>
+          <span class="text-green">purpose & precision.</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm a frontend developer passionate about creating clean,
+          responsive, and user-friendly digital experiences using
+          modern web technologies.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore Projects ↗
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <h3>Web</h3>
+            <p>Development</p>
+          </div>
+
+          <div>
+            <h3>UI/UX</h3>
+            <p>Design Focus</p>
+          </div>
+
+          <div>
+            <h3>Clean</h3>
+            <p>Code First</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+
+        <div class="code-card">
+          <div class="code-header">
+            <div class="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span>developer.js</span>
+          </div>
+
+          <div class="code-body">
+            <p><span class="code-purple">const</span> developer = {</p>
+            <p class="indent">name: <span class="code-green">'Developer'</span>,</p>
+            <p class="indent">role: <span class="code-green">'Frontend'</span>,</p>
+            <p class="indent">skills: [</p>
+            <p class="indent2"><span class="code-orange">'HTML'</span>,</p>
+            <p class="indent2"><span class="code-orange">'CSS'</span>,</p>
+            <p class="indent2"><span class="code-orange">'JavaScript'</span>,</p>
+            <p class="indent2"><span class="code-orange">'React'</span></p>
+            <p class="indent">],</p>
+            <p class="indent">creative: <span class="code-purple">true</span></p>
+            <p>};</p>
+            <p class="code-comment">// Turning ideas into reality.</p>
+          </div>
+
+          <div class="code-footer">
+            <span class="status-dot"></span>
+            Ready to build something great
+          </div>
+        </div>
+
+        <div class="floating-badge badge-top">
+          <span>✦</span> Creative Thinking
+        </div>
+
+        <div class="floating-badge badge-bottom">
+          <span>✓</span> Responsive Design
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Design-minded. <span class="text-green">Code-driven.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <span class="card-icon">✳</span>
+          <h3>Who I Am</h3>
+          <p>
+            A developer focused on building accessible, attractive,
+            and practical websites that solve real problems.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <span class="card-icon">⌘</span>
+          <h3>What I Do</h3>
+          <p>
+            I turn ideas and designs into responsive web interfaces
+            with attention to usability and performance.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <span class="card-icon">↗</span>
+          <h3>My Approach</h3>
+          <p>
+            I value readable code, consistent design systems,
+            continuous learning, and meaningful results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY TOOLKIT</p>
+          <h2>Skills & <span class="text-green">Technologies</span></h2>
+          <p class="section-description">
+            The technologies I use to build modern digital experiences.
+          </p>
+        </div>
+
         <div class="skills-grid">
-            <div class="skill-card"><h3>Frontend</h3><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>REST API</span></div></div>
-            <div class="skill-card"><h3>Modern Frontend</h3><div class="tags"><span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>Vite</span></div></div>
-            <div class="skill-card"><h3>Backend</h3><div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>REST API</span></div></div>
-            <div class="skill-card"><h3>CMS & Tools</h3><div class="tags"><span>WordPress</span><span>WooCommerce</span><span>Git</span><span>GitHub</span><span>Figma</span></div></div>
-        </div>
-    </div>
-</section>
+          <div class="skill-item">
+            <span class="skill-symbol html-symbol">5</span>
+            <div><h3>HTML5</h3><p>Semantic markup</p></div>
+          </div>
 
-<section class="section" id="projects">
-    <div class="container">
-        <div class="section-heading"><p class="eyebrow">FEATURED WORK</p><h2>Projects I've built.</h2></div>
-        <div class="projects-grid">
-            <article class="project-card">
-                <div class="project-image"><img src="assets/projects/project-1.svg" alt="E-commerce website project" loading="lazy"></div>
-                <div class="project-content"><p class="project-number">01</p><h3>E-Commerce Platform</h3><p>Responsive ecommerce experience with product browsing, categories, cart and API integration.</p><div class="tags"><span>React</span><span>JavaScript</span><span>REST API</span></div><div class="project-links"><a href="#" target="_blank">Live Demo →</a><a href="#" target="_blank">GitHub →</a></div></div>
-            </article>
-            <article class="project-card">
-                <div class="project-image"><img src="assets/projects/project-2.svg" alt="WordPress website project" loading="lazy"></div>
-                <div class="project-content"><p class="project-number">02</p><h3>WordPress Website</h3><p>Custom WordPress website focused on responsive design, SEO and performance optimization.</p><div class="tags"><span>WordPress</span><span>PHP</span><span>JavaScript</span></div><div class="project-links"><a href="#" target="_blank">Live Demo →</a><a href="#" target="_blank">GitHub →</a></div></div>
-            </article>
-            <article class="project-card">
-                <div class="project-image"><img src="assets/projects/project-3.svg" alt="Laravel project management system" loading="lazy"></div>
-                <div class="project-content"><p class="project-number">03</p><h3>Project Management System</h3><p>Role-based project management application with dashboard, projects, teams and task management.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div><div class="project-links"><a href="#" target="_blank">Live Demo →</a><a href="#" target="_blank">GitHub →</a></div></div>
-            </article>
-        </div>
-    </div>
-</section>
+          <div class="skill-item">
+            <span class="skill-symbol css-symbol">3</span>
+            <div><h3>CSS3</h3><p>Responsive styling</p></div>
+          </div>
 
-<section class="section section-dark" id="experience">
-    <div class="container">
-        <div class="section-heading"><p class="eyebrow">EXPERIENCE</p><h2>My professional journey.</h2></div>
-        <div class="timeline">
-            <article class="timeline-item"><div class="timeline-date">2024 — Present</div><div class="timeline-content"><h3>Frontend / Web Developer</h3><h4>Company Name</h4><p>Developing responsive websites and web applications, integrating APIs and improving website performance.</p></div></article>
-            <article class="timeline-item"><div class="timeline-date">2022 — 2024</div><div class="timeline-content"><h3>PHP / Laravel Developer</h3><h4>Company Name</h4><p>Built backend applications, REST APIs, dashboards and database-driven web applications.</p></div></article>
-        </div>
-    </div>
-</section>
+          <div class="skill-item">
+            <span class="skill-symbol js-symbol">JS</span>
+            <div><h3>JavaScript</h3><p>Interactive interfaces</p></div>
+          </div>
 
-<section class="section" id="services">
-    <div class="container">
-        <div class="section-heading"><p class="eyebrow">WHAT I DO</p><h2>Services I provide.</h2></div>
-        <div class="services-grid">
-            <article class="service-card"><span class="service-number">01</span><h3>Frontend Development</h3><p>Modern responsive websites using HTML, CSS, JavaScript, React and Next.js.</p></article>
-            <article class="service-card"><span class="service-number">02</span><h3>WordPress Development</h3><p>Custom WordPress websites, themes, plugins, WooCommerce and API integrations.</p></article>
-            <article class="service-card"><span class="service-number">03</span><h3>Performance Optimization</h3><p>Improving Core Web Vitals, page speed, image loading and frontend performance.</p></article>
-            <article class="service-card"><span class="service-number">04</span><h3>API Integration</h3><p>REST API development and integration for modern web applications.</p></article>
-        </div>
-    </div>
-</section>
+          <div class="skill-item">
+            <span class="skill-symbol react-symbol">⚛</span>
+            <div><h3>React</h3><p>Component-based UI</p></div>
+          </div>
 
-<section class="section contact-section" id="contact">
-    <div class="container">
-        <div class="contact-box">
-            <div><p class="eyebrow">LET'S WORK TOGETHER</p><h2>Have a project in mind?</h2><p>I'm always interested in discussing new projects, ideas and opportunities.</p></div>
-            <div class="contact-actions"><a href="mailto:your@email.com" class="btn btn-primary">Send Email</a><a href="assets/Dharmendra-Resume.pdf" class="btn btn-outline" download>Download Resume</a></div>
-        </div>
-    </div>
-</section>
-</main>
+          <div class="skill-item">
+            <span class="skill-symbol wp-symbol">W</span>
+            <div><h3>WordPress</h3><p>CMS development</p></div>
+          </div>
 
-<footer class="footer">
-    <div class="container footer-content"><p><strong>©</strong> <span id="year"></span> Dharmendra. All rights reserved.</p><a href="#home">Back to top ↑</a></div>
-</footer>
-<script src="js/script.js"></script>
+          <div class="skill-item">
+            <span class="skill-symbol git-symbol">⌘</span>
+            <div><h3>Git & GitHub</h3><p>Version control</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Slider -->
+    <section class="section container" id="projects">
+      <div class="projects-heading">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Featured <span class="text-green">Projects.</span></h2>
+          <p class="section-description">
+            A selection of web experiences built with modern technologies.
+          </p>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevProject"
+                  aria-label="Previous projects">←</button>
+          <button class="slider-btn" id="nextProject"
+                  aria-label="Next projects">→</button>
+        </div>
+      </div>
+
+      <div class="project-window" id="projectWindow">
+        <div class="project-track" id="projectTrack">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image ecommerce-image">
+              <span class="project-number">01 / 04</span>
+
+              <div class="mock-store">
+                <div class="mock-store-top">
+                  <strong>FORMA.</strong>
+                  <span>Shop&nbsp;&nbsp; ♡ &nbsp; Bag</span>
+                </div>
+
+                <div class="mock-store-content">
+                  <div>
+                    <small>NEW COLLECTION</small>
+                    <h3>Less, but<br>better.</h3>
+                    <span class="mock-shop-btn">Explore ↗</span>
+                  </div>
+                  <div class="mock-product">
+                    <div class="product-circle"></div>
+                    <div class="product-bottle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span>E-commerce</span>
+                <span>2026</span>
+              </div>
+              <h3>Modern Online Store</h3>
+              <p>A clean shopping experience with product-focused design.</p>
+              <div class="tag-list">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <a href="#contact" class="project-link">Discuss a similar project ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image dashboard-image">
+              <span class="project-number">02 / 04</span>
+
+              <div class="dashboard-mock">
+                <div class="dashboard-side">
+                  <span class="dashboard-logo">N.</span>
+                  <span>▦</span><span>◷</span><span>▤</span>
+                </div>
+
+                <div class="dashboard-main">
+                  <small>OVERVIEW</small>
+                  <h3>Good morning 👋</h3>
+
+                  <div class="dashboard-stats">
+                    <div><small>Revenue</small><strong>$24.8k</strong></div>
+                    <div><small>Growth</small><strong>+18.6%</strong></div>
+                  </div>
+
+                  <div class="chart-box">
+                    <div class="chart-bars">
+                      <i style="height:35%"></i>
+                      <i style="height:55%"></i>
+                      <i style="height:43%"></i>
+                      <i style="height:76%"></i>
+                      <i style="height:60%"></i>
+                      <i style="height:90%"></i>
+                      <i style="height:70%"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span>Dashboard UI</span><span>2026</span>
+              </div>
+              <h3>Analytics Dashboard</h3>
+              <p>A streamlined dashboard for viewing data and key metrics.</p>
+              <div class="tag-list">
+                <span>React</span><span>CSS</span><span>Charts</span>
+              </div>
+              <a href="#contact" class="project-link">Discuss a similar project ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image portfolio-image">
+              <span class="project-number">03 / 04</span>
+
+              <div class="portfolio-mock">
+                <div class="portfolio-mock-nav">
+                  <strong>STUDIO®</strong><span>MENU ☰</span>
+                </div>
+                <small>INDEPENDENT CREATIVE STUDIO</small>
+                <h3>Ideas into<br><em>impact.</em></h3>
+                <div class="portfolio-mock-bottom">
+                  <span>BRANDING / DIGITAL / STRATEGY</span>
+                  <span>↗</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span>Portfolio</span><span>2026</span>
+              </div>
+              <h3>Creative Studio Website</h3>
+              <p>A bold portfolio concept with expressive typography.</p>
+              <div class="tag-list">
+                <span>HTML</span><span>CSS</span><span>UI/UX</span>
+              </div>
+              <a href="#contact" class="project-link">Discuss a similar project ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-image wordpress-image">
+              <span class="project-number">04 / 04</span>
+
+              <div class="wp-mock">
+                <div class="wp-mock-nav">
+                  <strong>GREENSPACE</strong><span>ABOUT &nbsp; SERVICES</span>
+                </div>
+                <div class="wp-mock-content">
+                  <small>GROW BETTER, LIVE BETTER</small>
+                  <h3>Bring nature<br>closer to home.</h3>
+                  <span>Explore our services ↗</span>
+                </div>
+                <div class="wp-plant">
+                  <div></div><div></div><div></div><div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span>CMS Website</span><span>2026</span>
+              </div>
+              <h3>WordPress Business Website</h3>
+              <p>A business website concept with reusable page sections.</p>
+              <div class="tag-list">
+                <span>WordPress</span><span>PHP</span><span>CSS</span>
+              </div>
+              <a href="#contact" class="project-link">Discuss a similar project ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="slider-bottom">
+        <div class="slider-progress">
+          <span id="sliderProgress"></span>
+        </div>
+        <p id="sliderCounter" aria-live="polite">01 — 04</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+          <h2>Let's build something<br><span class="text-green">meaningful.</span></h2>
+          <p class="contact-description">
+            Have an idea or an opportunity? Let's connect and discuss it.
+          </p>
+        </div>
+
+        <a class="btn btn-primary"
+           href="mailto:hello@example.com?subject=Portfolio%20Enquiry">
+          Get in Touch ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">D<span>.</span></a>
+      <p>Designed with purpose. Built with code.</p>
+      <p>© <span id="currentYear"></span> Developer Portfolio</p>
+    </div>
+  </footer>
+
+  <!-- Slider and Navigation JavaScript -->
+  <script>
+    const track = document.getElementById("projectTrack");
+    const windowElement = document.getElementById("projectWindow");
+    const cards = Array.from(track.children);
+
+    const prevButton = document.getElementById("prevProject");
+    const nextButton = document.getElementById("nextProject");
+    const counter = document.getElementById("sliderCounter");
+    const progress = document.getElementById("sliderProgress");
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    let currentIndex = 0;
+
+    function getVisibleCards() {
+      if (window.innerWidth <= 600) return 1;
+      if (window.innerWidth <= 900) return 2;
+      return 3;
+    }
+
+    function getMaxIndex() {
+      return Math.max(0, cards.length - getVisibleCards());
+    }
+
+    function updateSlider() {
+      const visibleCards = getVisibleCards();
+      const maxIndex = getMaxIndex();
+
+      currentIndex = Math.min(currentIndex, maxIndex);
+
+      const cardWidth = cards[0].getBoundingClientRect().width;
+      const trackStyle = getComputedStyle(track);
+      const gap = parseFloat(trackStyle.gap) || 0;
+
+      track.style.transform =
+        `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+
+      const start = currentIndex + 1;
+      const end = Math.min(currentIndex + visibleCards, cards.length);
+
+      counter.textContent =
+        `${String(start).padStart(2, "0")} — ${String(end).padStart(2, "0")}`;
+
+      const progressPercent =
+        ((currentIndex + visibleCards) / cards.length) * 100;
+
+      progress.style.width = `${Math.min(progressPercent, 100)}%`;
+
+      prevButton.disabled = currentIndex === 0;
+      nextButton.disabled = currentIndex >= maxIndex;
+    }
+
+    nextButton.addEventListener("click", () => {
+      if (currentIndex < getMaxIndex()) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+
+    prevButton.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    window.addEventListener("resize", updateSlider);
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    updateSlider();
+  </script>
+
 </body>
 </html>
